@@ -10,9 +10,7 @@ This React starter kit utilizes React 19, TypeScript, Tailwind, and the [Mantine
 
 ## Getting Started
 
-```bash
-laravel new --using=heavymedai/laravel-react-mantine-starter-kit
-```
+There is no release yet, just download this repository or pull from git.
 
 ## Documentation
 
