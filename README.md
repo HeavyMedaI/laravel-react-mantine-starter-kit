@@ -1,5 +1,15 @@
 # Laravel + React (Mantine) Starter Kit (with Mantine Panel & Sidebar & Components..)
 
+## UI Screenshots
+
+![dashboard-sidebar-light.png](img/dashboard-sidebar-light.png)
+
+![dashboard-sidebar-collapsed-light.png](img/dashboard-sidebar-collapsed-light.png)
+
+![settings-sidebar-dark.png](img/settings-sidebar-dark.png)
+
+![settings-sidebar-collapsed-dark.png](img/settings-sidebar-collapsed-dark.png)
+
 ## Introduction
 
 A React starter kit provides a robust, modern starting point for building Laravel applications with a React frontend using [Inertia](https://inertiajs.com).
