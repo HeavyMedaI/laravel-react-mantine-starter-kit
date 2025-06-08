@@ -1,4 +1,4 @@
-# Laravel + React (Mantine) Starter Kit
+# Laravel + React (Mantine) Starter Kit (with Mantine Panel & Sidebar & Components..)
 
 ## Introduction
 
@@ -11,7 +11,7 @@ This React starter kit utilizes React 19, TypeScript, Tailwind, and the [Mantine
 ## Getting Started
 
 ```bash
-laravel new --using=adrum/laravel-react-mantine-starter-kit
+laravel new --using=heavymedai/laravel-react-mantine-starter-kit
 ```
 
 ## Documentation
@@ -20,11 +20,9 @@ Documentation for Official Laravel starter kits can be found on the [Laravel web
 
 ## Other Starter Kits
 
-Check out my other Laravel starter kits:
+This starter kit is based on [Laravel 12+ React (Mantine) Starter Kit](https://github.com/adrum/laravel-react-mantine-starter-kit) by [adrum](https://github.com/adrum)
 
-- [Laravel 12+ React (Mantine) Starter Kit](https://github.com/adrum/laravel-react-mantine-starter-kit): A React starter kit based on the oficial Laravel 12 React Starter Kit which provides a robust, modern starting point for building Laravel applications with a React frontend using Inertia.
-- [Laravel Jetstream + React (Typescript) Starter Kit](https://github.com/adrum/laravel-jetstream-react-typescript): A React starter kit based on Laravel Jetstream which provides a robust, modern starting point for building Laravel applications with a React frontend using Inertia.
-- [Laravel Jetstream + React (Mantine) Starter Kit](https://github.com/adrum/laravel-jetstream-react-mantine): Same as the above, except it swaps HeadlessUI with [Mantine](https://mantine.dev).
+You can check his profile, he has other cool stuff.
 
 
 ## License
