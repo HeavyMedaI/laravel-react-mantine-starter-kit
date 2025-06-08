@@ -12,6 +12,7 @@ import {
     TextInput,
     Textarea,
     createTheme,
+    MantineColorsTuple, AppShellHeader
 } from '@mantine/core';
 import { DateTimePicker } from '@mantine/dates';
 
@@ -19,6 +20,19 @@ import { Link } from '@inertiajs/react';
 import '@mantine/core/styles.css';
 import '@mantine/dates/styles.css';
 import '@mantine/notifications/styles.css';
+
+const colorsTuple: MantineColorsTuple = [
+    '#e1f8ff',
+    '#cbedff',
+    '#9ad7ff',
+    '#64c1ff',
+    '#3aaefe',
+    '#20a2fe',
+    '#099cff',
+    '#0088e4',
+    '#0079cd',
+    '#0068b6'
+];
 
 const InputStyles = {
     label: {
@@ -31,9 +45,9 @@ const InputStyles = {
 };
 
 const theme = createTheme({
-    primaryColor: 'dark',
+    primaryColor: 'blue',
 
-    defaultRadius: 'md',
+    defaultRadius: 'sm',
 
     components: {
         Anchor: Anchor.extend({
@@ -147,14 +161,22 @@ const theme = createTheme({
                 styles: {
                     dropdown: {
                         backgroundColor: 'var(--background)',
-                        border: 'var(--border)',
+                        border: '1px solid var(--border)',
                     },
                     divider: {
                         borderColor: 'var(--border)',
                     },
                     item: {
                         background: 'transparent',
+                        color: 'var(--foreground)',
                     },
+                },
+            },
+        }),
+        AppShellHeader: AppShellHeader.extend({
+            defaultProps: {
+                styles: {
+                    borderColor: 'var(--sidebar-border)',
                 },
             },
         }),

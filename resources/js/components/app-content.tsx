@@ -1,8 +1,12 @@
 import * as React from 'react';
 
-export function AppContent({ children, ...props }: React.PropsWithChildren) {
+export function AppContent({ fullWidth = false, children, ...props }: React.PropsWithChildren) {
+    var _class = 'mx-auto flex h-full w-full flex-1 flex-col gap-4';
+    if (!fullWidth) {
+        _class += ' max-w-7xl';
+    }
     return (
-        <div className="mx-auto flex h-full w-full max-w-7xl flex-1 flex-col gap-4" {...props}>
+        <div className={_class} {...props}>
             {children}
         </div>
     );

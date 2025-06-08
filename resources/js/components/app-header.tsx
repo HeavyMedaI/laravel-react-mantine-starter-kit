@@ -12,7 +12,7 @@ interface AppHeaderProps {
 
 export function AppHeader({ breadcrumbs, toggleDesktop, toggleMobile }: AppHeaderProps) {
     return (
-        <div className="bg-background flex h-full w-full flex-1 items-center justify-start gap-x-4 px-2">
+        <div className="bg-sidebar flex h-full w-full flex-1 items-center justify-start gap-x-4 px-2">
             <Button
                 variant="subtle"
                 className="p-0"
@@ -22,7 +22,7 @@ export function AppHeader({ breadcrumbs, toggleDesktop, toggleMobile }: AppHeade
                 onClick={toggleDesktop}
                 visibleFrom="sm"
             >
-                <IconLayoutSidebar size={20} color="var(--foreground)" />
+                <IconLayoutSidebar size={20} color="var(--sidebar-foreground)" />
             </Button>
             <Button
                 variant="subtle"
@@ -33,7 +33,7 @@ export function AppHeader({ breadcrumbs, toggleDesktop, toggleMobile }: AppHeade
                 onClick={toggleMobile}
                 hiddenFrom="sm"
             >
-                <IconLayoutSidebar size={20} color="var(--foreground)" />
+                <IconLayoutSidebar size={20} color="var(--sidebar-foreground)" />
             </Button>
 
             {breadcrumbs && breadcrumbs.length > 0 && <Breadcrumbs breadcrumbs={breadcrumbs} />}

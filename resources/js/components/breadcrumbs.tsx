@@ -1,6 +1,6 @@
 import { type BreadcrumbItem as BreadcrumbItemType } from '@/types';
 import { Link } from '@inertiajs/react';
-import { Anchor, Breadcrumbs as MantineBreadcrumbs } from '@mantine/core';
+import { Anchor, Breadcrumbs as MantineBreadcrumbs, Text } from '@mantine/core';
 
 export function Breadcrumbs({ breadcrumbs }: { breadcrumbs: BreadcrumbItemType[] }) {
     return (
@@ -8,9 +8,9 @@ export function Breadcrumbs({ breadcrumbs }: { breadcrumbs: BreadcrumbItemType[]
             {breadcrumbs.length > 0 && (
                 <MantineBreadcrumbs>
                     {breadcrumbs.map((item, index) => (
-                        <Anchor component={Link} href={item.href} key={index} underline="never">
+                        <Text component={Link} href={item.href} key={index} underline="never" c="var(--sidebar-foreground)">
                             {item.title}
-                        </Anchor>
+                        </Text>
                     ))}
                 </MantineBreadcrumbs>
             )}

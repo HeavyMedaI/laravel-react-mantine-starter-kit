@@ -5,13 +5,14 @@ import { type ReactNode } from 'react';
 
 interface AppLayoutProps {
     children: ReactNode;
+    fullWidth: boolean;
     breadcrumbs?: BreadcrumbItem[];
 }
 
-export default ({ children, breadcrumbs, ...props }: AppLayoutProps) => {
+export default ({children, fullWidth = false, breadcrumbs, ...props }: AppLayoutProps) => {
     useAppearance();
     return (
-        <AppLayoutTemplate breadcrumbs={breadcrumbs} {...props}>
+        <AppLayoutTemplate fullWidth={fullWidth} breadcrumbs={breadcrumbs} {...props}>
             {children}
         </AppLayoutTemplate>
     );

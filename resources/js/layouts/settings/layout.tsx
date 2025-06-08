@@ -43,7 +43,7 @@ export default function SettingsLayout({ children }: PropsWithChildren) {
                                 key={`${item.href}-${index}`}
                                 href={item.href}
                                 component={Link}
-                                prefetch
+                                prefetch={true}
                                 size="sm"
                                 justify="start"
                                 color="gray"
